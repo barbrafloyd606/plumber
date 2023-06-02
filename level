@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Регулярные выражения</h2>
+
+<p>Заменить "microsoft" на "Schoolsw3" в параграфе ниже:</p>
+
+<button onclick="myFunction()">Попробовать</button>
+
+<p id="demo">Пожалуйста, посетите Microsoft и Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace(/microsoft/i,"Schoolsw3");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
